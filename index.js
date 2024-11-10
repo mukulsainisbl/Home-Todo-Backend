@@ -20,7 +20,7 @@ const corsOptions = {
 app.use('/user' , userRouter)
 app.use('/todo' , todoRouter)
 
-app.get('/health' , (req,res) => {
+app.get('/' , (req,res) => {
     res.status(200).json({Msg : "Health OK"})
 })
 
