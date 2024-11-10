@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json())
 
 const corsOptions = {
-    origin: 'http://localhost:5173', // Allow only this origin
+    origin: 'https://home-todo-frontend-yq56-hy16y1wjk-mukulsainisbls-projects.vercel.app', // Allow only this origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed methods
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
     optionsSuccessStatus: 204, // For legacy browser support
