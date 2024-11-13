@@ -9,10 +9,8 @@ const app = express()
 app.use(express.json())
 
 const corsOptions = {
-    origin: 'https://home-todo-frontend-yq56-9swq842mv-mukulsainisbls-projects.vercel.app', // Allow only this origin
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed methods
+    origin: process.env.FRONTEND_URL , // Allow only this origin
     credentials: true, // Allow credentials (cookies, authorization headers,         etc.)
-    optionsSuccessStatus: 204, // For legacy browser support
   };
   
   // Use CORS with specific options
