@@ -5,6 +5,7 @@ const userRouter = require('./routes/user.route')
 const todoRouter = require('./routes/todo.route')
 const cors = require("cors")
 const app = express()
+
 app.use(express.json())
 
 const corsOptions = {
@@ -21,7 +22,7 @@ app.use('/user' , userRouter)
 app.use('/todo' , todoRouter)
 
 app.get('/' , (req,res) => {
-    res.status(200).json({Msg : "Health OK"})
+    res.status(200).json({Msg : "Connected"})
 })
 
 
